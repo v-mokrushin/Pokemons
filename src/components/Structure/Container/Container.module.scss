@@ -1,0 +1,18 @@
+@import "/src/assets/css/common.scss";
+
+.root {
+  width: 1450px;
+  margin: 0 auto;
+
+  @include media-breakpoint-down(FHD) {
+    width: 1075px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    width: 960px;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}

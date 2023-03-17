@@ -1,0 +1,56 @@
+@import "/src/assets/css/common.scss";
+
+.root {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: $black;
+  line-height: 35px;
+
+  @include media-breakpoint-down(FHD) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include media-breakpoint-down(xxs) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.small {
+  font-size: 16px;
+
+  @include media-breakpoint-down(FHD) {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    font-size: 13px;
+    line-height: 26px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+.smallLineHeight {
+  line-height: 2vh;
+}
+
+.noMargin {
+  line-height: normal;
+}

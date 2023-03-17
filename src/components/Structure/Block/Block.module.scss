@@ -1,0 +1,17 @@
+@import "/src/assets/css/common.scss";
+
+.root {
+  margin-bottom: 35px;
+
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 27px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin-bottom: 25px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

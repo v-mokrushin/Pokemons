@@ -1,0 +1,42 @@
+$breakpoints: (
+  xxs: 350.98px,
+  xs: 575.98px,
+  sm: 767.98px,
+  md: 991.98px,
+  lg: 1199.98px,
+  xl: 1399.98px,
+  FHD: 1999.98px,
+);
+
+@mixin media-breakpoint-down($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+
+  @if ($size == 0) {
+    @content;
+  } @else {
+    @media screen and (max-width: ($size)) {
+      @content;
+    }
+  }
+}
+
+@include media-breakpoint-down(FHD) {
+}
+
+@include media-breakpoint-down(xl) {
+}
+
+@include media-breakpoint-down(lg) {
+}
+
+@include media-breakpoint-down(md) {
+}
+
+@include media-breakpoint-down(sm) {
+}
+
+@include media-breakpoint-down(xs) {
+}
+
+@include media-breakpoint-down(xxs) {
+}

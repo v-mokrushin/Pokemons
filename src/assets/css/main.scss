@@ -1,0 +1,13 @@
+@import "./reset.scss";
+@import "./common.scss";
+@import "animate.css";
+@import "./fonts.scss";
+
+// html {
+//   scrollbar-color: rebeccapurple green;
+//   scrollbar-width: thin;
+// }
+
+:root {
+  --animate-duration: 400ms;
+}
